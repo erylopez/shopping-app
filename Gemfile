@@ -14,5 +14,13 @@ gem 'spring',                   group: :development
 gem 'mysql'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 2.14.2'
+end
+
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem 'shoulda-matchers'
+  gem 'database_cleaner', '~> 1.2.0'
+  gem 'simplecov', :require => false
 end
